@@ -1,0 +1,40 @@
+
+=== In & Out Laundry Booking - WordPress Installation ===
+
+IMPORTANT: This is a WORDPRESS PLUGIN, not a Theme.
+
+1. Build the App:
+   --------------------
+   Open your terminal in the root project folder and run:
+   
+   npm install
+   npm run build
+
+   This will create a `dist` folder inside the `wordpress` folder containing `assets/index.js` and `assets/index.css`.
+
+2. Prepare the Zip:
+   ---------------------
+   Create a zip file of the ENTIRE `wordpress` folder.
+   Name it `in-and-out-laundry.zip`.
+   
+   The zip should contain:
+   - in-and-out-laundry.php
+   - dist/ (folder)
+   - instructions.txt
+
+3. Install on WordPress:
+   ---------------------
+   a. Log in to your WordPress Admin Dashboard.
+   b. Go to **Plugins** (on the left menu).  <-- NOT Appearance/Themes!
+   c. Click **Add New Plugin**.
+   d. Click **Upload Plugin** (top button).
+   e. Choose your `in-and-out-laundry.zip` file and click **Install Now**.
+   f. Click **Activate Plugin**.
+
+4. Usage:
+   ------
+   Create a new Page (e.g., "Booking") and add the following shortcode block:
+
+   [in_and_out_booking]
+
+   Publish the page. Your React app will now appear on that page.

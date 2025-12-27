@@ -1,0 +1,31 @@
+
+=== In & Out Laundry - WordPress Theme Installation ===
+
+1. Build the Theme Assets:
+   -----------------------
+   Open your terminal in the root project folder (where package.json is) and run:
+   
+   npm install
+   npm run build
+
+   This will compile the React app and place the files into `in-and-out-theme/dist`.
+
+2. Create the Theme Zip:
+   ---------------------
+   Create a zip file of the folder `in-and-out-theme`. 
+   
+   Important: The zip file should contain the folder `in-and-out-theme`, and inside that folder should be `style.css`, `index.php`, `dist/`, etc.
+
+3. Install in WordPress:
+   ---------------------
+   a. Go to your WordPress Dashboard.
+   b. Go to **Appearance > Themes**.
+   c. Click **Add New Theme**.
+   d. Click **Upload Theme**.
+   e. Upload your zip file.
+   f. Click **Install Now** and then **Activate**.
+
+4. Done!
+   -----
+   Your entire website will now look and function like the In & Out Laundry app.
+   Note: Since this is a Single Page Application (SPA) theme, it takes over the frontend completely.
